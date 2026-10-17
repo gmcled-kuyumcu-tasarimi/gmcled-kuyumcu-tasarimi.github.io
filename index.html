@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kuyumcu Mağazası · Aydınlatma Projesi · GMC LED</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="lib/pannellum.min.css">
+<script src="lib/pannellum.min.js"></script>
+<style>
+:root{--tur:#F26A1B;--mur:#14171C;--ik:#6B7280;--zemin:#F8F6F3;--cizgi:#ECE7E1}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;background:var(--zemin);color:var(--mur)}
+header{padding:28px 20px 10px;max-width:1200px;margin:0 auto}header h1{font-family:Georgia,serif;font-size:34px;margin:0 0 6px}header p{color:var(--ik);margin:0}
+.logo{font-weight:800;letter-spacing:.5px;color:var(--tur);font-size:20px;margin-bottom:14px}.logo b{color:var(--mur)}
+main{max-width:1200px;margin:0 auto;padding:0 20px 60px}h2{font-family:Georgia,serif;font-size:24px;margin:34px 0 12px}
+.rakam{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:18px 0}.rakam div{background:#fff;border:1px solid var(--cizgi);border-radius:16px;padding:14px 16px;border-left:5px solid var(--tur)}
+.rakam b{display:block;font-size:26px}.rakam span{color:var(--ik);font-size:13px}
+#pano{width:100%;height:62vh;min-height:360px;border-radius:18px;overflow:hidden;background:#111}
+.pano-btn{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.pano-btn button{border:1px solid var(--cizgi);background:#fff;border-radius:999px;padding:8px 14px;cursor:pointer;font-size:14px}.pano-btn button.aktif{background:var(--tur);color:#fff;border-color:var(--tur)}
+.galeri{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}.kart{display:block;background:#fff;border:1px solid var(--cizgi);border-radius:16px;overflow:hidden;text-decoration:none;color:var(--mur)}
+.kart img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}.kart span{display:block;padding:10px 12px;font-size:14px}
+.indir a{display:inline-block;background:var(--mur);color:#fff;text-decoration:none;border-radius:14px;padding:12px 18px;margin:6px 8px 6px 0;font-size:15px}.indir a.tur{background:var(--tur)}
+video{width:100%;max-width:420px;border-radius:16px;display:block}footer{color:var(--ik);font-size:12px;text-align:center;padding:20px}
+@media (max-width:600px){header h1{font-size:26px}#pano{height:52vh}}
+</style></head><body>
+<header><div class="logo">GMC<b>LED</b></div><h1>Kuyumcu Mağazası · Aydınlatma Projesi</h1><p>Vitrin, banko, müşteri alanı ve arka bölüm · ETNA 26 + BLADE 12 · 17 Ekim 2026 · Rev. C</p></header>
+<main>
+  <div class="rakam"><div><b>22</b><span>ETNA 26 vitrin/banko</span></div><div><b>9</b><span>BLADE 12 genel</span></div><div><b>1.553 W</b><span>kurulu güç</span></div><div><b>31.500 lx</b><span>vitrin ortalama</span></div><div><b>5</b><span>devre</span></div></div>
+  <h2>360° gezinti</h2><p style='color:var(--ik);margin:0 0 8px'>Sürükleyin, telefonda döndürün; noktalar arasında geçiş yapın.</p><div id='pano'></div><div class='pano-btn'>      <button data-id="pano_giris">Girişte</button>
+      <button data-id="pano_musteri">Müşteri alanı</button>
+      <button data-id="pano_personel">Banko arkası</button>
+      <button data-id="pano_sokak">Sokaktan</button>
+      <button data-id="pano_arka">Arka bölüm</button></div>
+  <h2>Görseller</h2>
+  <div class="galeri">
+      <a class="kart" href="img/02_genel.jpg" target="_blank"><img src="img/k_02_genel.jpg" alt="Girişten genel görünüm" loading="lazy"><span>Girişten genel görünüm</span></a>
+      <a class="kart" href="img/07_banko.jpg" target="_blank"><img src="img/k_07_banko.jpg" alt="Müşteri alanı ve banko" loading="lazy"><span>Müşteri alanı ve banko</span></a>
+      <a class="kart" href="img/03_vitrin_yakin.jpg" target="_blank"><img src="img/k_03_vitrin_yakin.jpg" alt="Bilezik vitrini" loading="lazy"><span>Bilezik vitrini</span></a>
+      <a class="kart" href="img/06_vitrin_dis.jpg" target="_blank"><img src="img/k_06_vitrin_dis.jpg" alt="Sokaktan vitrin · akşam" loading="lazy"><span>Sokaktan vitrin · akşam</span></a>
+      <a class="kart" href="img/15_vitrin_dis_gunduz.jpg" target="_blank"><img src="img/k_15_vitrin_dis_gunduz.jpg" alt="Sokaktan vitrin · gündüz" loading="lazy"><span>Sokaktan vitrin · gündüz</span></a>
+      <a class="kart" href="img/04_vitrin_makro.jpg" target="_blank"><img src="img/k_04_vitrin_makro.jpg" alt="Yakın plan · pırıltı" loading="lazy"><span>Yakın plan · pırıltı</span></a>
+      <a class="kart" href="img/05_banko_yakin.jpg" target="_blank"><img src="img/k_05_banko_yakin.jpg" alt="Banko vitrini" loading="lazy"><span>Banko vitrini</span></a>
+      <a class="kart" href="img/16_banko_isik_konisi.jpg" target="_blank"><img src="img/k_16_banko_isik_konisi.jpg" alt="Işık konileri" loading="lazy"><span>Işık konileri</span></a>
+      <a class="kart" href="img/08_arka.jpg" target="_blank"><img src="img/k_08_arka.jpg" alt="Personel tarafı" loading="lazy"><span>Personel tarafı</span></a>
+      <a class="kart" href="img/09_arka_oda.jpg" target="_blank"><img src="img/k_09_arka_oda.jpg" alt="Arka bölüm · mutfak" loading="lazy"><span>Arka bölüm · mutfak</span></a>
+      <a class="kart" href="img/10_ofis.jpg" target="_blank"><img src="img/k_10_ofis.jpg" alt="Ofis" loading="lazy"><span>Ofis</span></a>
+      <a class="kart" href="img/17_stil_paris.jpg" target="_blank"><img src="img/k_17_stil_paris.jpg" alt="Seçenek · Paris Vendôme" loading="lazy"><span>Seçenek · Paris Vendôme</span></a>
+      <a class="kart" href="img/18_stil_monokrom.jpg" target="_blank"><img src="img/k_18_stil_monokrom.jpg" alt="Seçenek · Monokrom Gri" loading="lazy"><span>Seçenek · Monokrom Gri</span></a>
+      <a class="kart" href="img/11_once_sonra_ic.jpg" target="_blank"><img src="img/k_11_once_sonra_ic.jpg" alt="Önce / sonra" loading="lazy"><span>Önce / sonra</span></a>
+      <a class="kart" href="img/13_tavan_plani.jpg" target="_blank"><img src="img/k_13_tavan_plani.jpg" alt="Tavan planı" loading="lazy"><span>Tavan planı</span></a>
+      <a class="kart" href="img/14_luks_haritasi.jpg" target="_blank"><img src="img/k_14_luks_haritasi.jpg" alt="Aydınlık haritası" loading="lazy"><span>Aydınlık haritası</span></a>
+  </div>
+  
+  <h2>İndir</h2>
+  <div class="indir"><a class='tur' href='00_Sunum_Kuyumcu_Magazasi_GMC_LED.pdf' target='_blank'>Sunum PDF</a><a href="Malzeme_Listesi.xlsx">Malzeme listesi (Excel)</a><a href="pafta_tavan.dxf">Tavan planı (DXF)</a></div>
+</main>
+<footer>GMC LED · Quality Light Solutions · Görseller temsilidir; ölçüler proje çiziminden. Takı modelleri Sketchfab (CC BY), dekor Poly Haven (CC0).</footer>
+<script>
+const PANOLAR=[
+      {id:"pano_giris", ad:"Girişte"},
+      {id:"pano_musteri", ad:"Müşteri alanı"},
+      {id:"pano_personel", ad:"Banko arkası"},
+      {id:"pano_sokak", ad:"Sokaktan"},
+      {id:"pano_arka", ad:"Arka bölüm"}
+];
+if(PANOLAR.length){
+  let viewer=null;
+  function ac(id){
+    if(viewer)viewer.destroy();
+    viewer=pannellum.viewer('pano',{type:'equirectangular',panorama:'pano/'+id+'.jpg',autoLoad:true,autoRotate:-2,compass:false,showZoomCtrl:true,hfov:95,minHfov:50,maxHfov:120});
+    document.querySelectorAll('.pano-btn button').forEach(b=>b.classList.toggle('aktif',b.dataset.id===id));
+  }
+  document.querySelectorAll('.pano-btn button').forEach(b=>b.addEventListener('click',()=>ac(b.dataset.id)));
+  ac(PANOLAR[0].id);
+}
+</script></body></html>
