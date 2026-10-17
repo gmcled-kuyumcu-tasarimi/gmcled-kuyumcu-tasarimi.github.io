@@ -5,22 +5,25 @@
 <link rel="stylesheet" href="lib/pannellum.min.css">
 <script src="lib/pannellum.min.js"></script>
 <style>
-:root{--tur:#F26A1B;--mur:#14171C;--ik:#6B7280;--zemin:#F8F6F3;--cizgi:#ECE7E1}
-*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;background:var(--zemin);color:var(--mur)}
-header{padding:28px 20px 10px;max-width:1200px;margin:0 auto}header h1{font-family:Georgia,serif;font-size:34px;margin:0 0 6px}header p{color:var(--ik);margin:0}
-.logo{font-weight:800;letter-spacing:.5px;color:var(--tur);font-size:20px;margin-bottom:14px}.logo b{color:var(--mur)}
-main{max-width:1200px;margin:0 auto;padding:0 20px 60px}h2{font-family:Georgia,serif;font-size:24px;margin:34px 0 12px}
-.rakam{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:18px 0}.rakam div{background:#fff;border:1px solid var(--cizgi);border-radius:16px;padding:14px 16px;border-left:5px solid var(--tur)}
+:root{--tur:#FCB332;--mur:#221F1F;--ik:#6B7280;--zemin:#FFFFFF;--cizgi:#E9E9E9;--acik:#FAF7F0}
+*{box-sizing:border-box}body{margin:0;font-family:Montserrat,system-ui,Segoe UI,Arial,sans-serif;background:var(--zemin);color:var(--mur)}
+@font-face{font-family:Montserrat;src:url(lib/Montserrat-Regular.ttf);font-weight:400}@font-face{font-family:Montserrat;src:url(lib/Montserrat-SemiBold.ttf);font-weight:600}@font-face{font-family:Montserrat;src:url(lib/Montserrat-Bold.ttf);font-weight:700}
+.ust{border-top:4px solid var(--tur)}
+header{padding:28px 20px 10px;max-width:1200px;margin:0 auto}header h1{font-family:Montserrat,sans-serif;font-weight:700;font-size:32px;letter-spacing:-.3px;margin:0 0 6px}header p{color:var(--ik);margin:0}
+.logo-img{display:block;height:52px;width:auto;margin-bottom:16px}.logo{font-weight:800;letter-spacing:.5px;color:var(--tur);font-size:20px;margin-bottom:14px}.logo b{color:var(--mur)}
+main{max-width:1200px;margin:0 auto;padding:0 20px 60px}h2{font-family:Montserrat,sans-serif;font-weight:700;font-size:22px;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--tur)}
+.rakam{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:18px 0}.rakam div{background:var(--acik);border:1px solid var(--cizgi);border-radius:12px;padding:14px 16px;border-left:5px solid var(--tur)}
 .rakam b{display:block;font-size:26px}.rakam span{color:var(--ik);font-size:13px}
 #pano{width:100%;height:62vh;min-height:360px;border-radius:18px;overflow:hidden;background:#111}
 .pano-btn{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.pano-btn button{border:1px solid var(--cizgi);background:#fff;border-radius:999px;padding:8px 14px;cursor:pointer;font-size:14px}.pano-btn button.aktif{background:var(--tur);color:#fff;border-color:var(--tur)}
 .galeri{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}.kart{display:block;background:#fff;border:1px solid var(--cizgi);border-radius:16px;overflow:hidden;text-decoration:none;color:var(--mur)}
 .kart img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}.kart span{display:block;padding:10px 12px;font-size:14px}
-.indir a{display:inline-block;background:var(--mur);color:#fff;text-decoration:none;border-radius:14px;padding:12px 18px;margin:6px 8px 6px 0;font-size:15px}.indir a.tur{background:var(--tur)}
+.indir a{display:inline-block;background:var(--mur);color:#fff;text-decoration:none;border-radius:14px;padding:12px 18px;margin:6px 8px 6px 0;font-size:15px}.indir a.tur{background:var(--tur);color:var(--mur);font-weight:600}
 video{width:100%;max-width:420px;border-radius:16px;display:block}footer{color:var(--ik);font-size:12px;text-align:center;padding:20px}
 @media (max-width:600px){header h1{font-size:26px}#pano{height:52vh}}
 </style></head><body>
-<header><div class="logo">GMC<b>LED</b></div><h1>Kuyumcu Mağazası · Aydınlatma Projesi</h1><p>Vitrin, banko, müşteri alanı ve arka bölüm · ETNA 26 + BLADE 12 · 17 Ekim 2026 · Rev. C</p></header>
+<div class="ust"></div>
+<header><img class="logo-img" src="img/gmc_logo.png" alt="GMC LED" width="190" height="52"><h1>Kuyumcu Mağazası · Aydınlatma Projesi</h1><p>Vitrin, banko, müşteri alanı ve arka bölüm · ETNA 26 + BLADE 12 · 17 Ekim 2026 · Rev. C</p></header>
 <main>
   <div class="rakam"><div><b>22</b><span>ETNA 26 vitrin/banko</span></div><div><b>9</b><span>BLADE 12 genel</span></div><div><b>1.553 W</b><span>kurulu güç</span></div><div><b>31.500 lx</b><span>vitrin ortalama</span></div><div><b>5</b><span>devre</span></div></div>
   <h2>360° gezinti</h2><p style='color:var(--ik);margin:0 0 8px'>Sürükleyin, telefonda döndürün; noktalar arasında geçiş yapın.</p><div id='pano'></div><div class='pano-btn'>      <button data-id="pano_giris">Girişte</button>
